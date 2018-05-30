@@ -11,20 +11,30 @@
   });
       </script>
       <style>      
-body, html {
-    height: 100%;
+.main {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.main { 
-    background-image: url('https://image.ibb.co/iK4XVy/The_Great_Barrier_Reef_Food_Web.jpg');
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  .main {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }
       </style>
     </head>
     <body>
-        <div class="main"></div>
+        <img src="https://image.ibb.co/iK4XVy/The_Great_Barrier_Reef_Food_Web.jpg" class="main" />
     </body>
 </html>
