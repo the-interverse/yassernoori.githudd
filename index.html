@@ -24,6 +24,7 @@
 		  margin-left: auto;
 		  margin-right: auto;
 		}
+			#algae{font-size:200px}
 		</style>
 	</head>
 	<body>
@@ -35,7 +36,7 @@ var animals = [ 'tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagl
 var search;
 
 function print(message) {
-  document.write( '<p>' + message + '</p>');
+  document.write( '<p id=x>' + message + '</p>');
 }
 
 while (true) {
@@ -47,6 +48,7 @@ while (true) {
     print( animals.join(', ') ); 
   } else {
     if ( animals.indexOf( search ) > -1 ) {
+      var x = document.createElementById(search);
       print( 'Results For ' + search + ': ...');
     } else {
       print( search + ': No Such Animal Found'); 
