@@ -31,7 +31,7 @@
 window.onload = function() {
         window.focus();
 	
-var animals = [ 'tiger ahark', 'sea turtle', 'sea snake', 'cookies', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
+var animals = [ 'tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
 var search;
 
 function print(message) {
@@ -47,7 +47,7 @@ while (true) {
     print( animals.join(', ') ); 
   } else {
     if ( animals.indexOf( search ) > -1 ) {
-      print( 'Results For' + search + ': ...');
+      print( 'Results For ' + search + ': ...');
     } else {
       print( search + ': No Such Animal Found'); 
     }
