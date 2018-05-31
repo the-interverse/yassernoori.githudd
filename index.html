@@ -26,6 +26,31 @@
 		</style>
 	</head>
 	<body>
+		<script>
+var animals = [ 'tiger ahark', 'sea turtle', 'sea snake', 'cookies', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
+var search;
+
+function print(message) {
+  document.write( '<p>' + message + '</p>');
+}
+
+while (true) {
+  search = prompt("Search An Animal For Its Image. \n Type 'LIST' For A List Of Animals \n Type 'QUIT' To Exit");
+  search = search.toLowerCase();
+  if ( search === 'quit') {
+    break;
+  } else if ( search === 'list' ) {
+    print( animals.join(', ') ); 
+  } else {
+    if ( animals.indexOf( search ) > -1 ) {
+      print( 'Results For' + search + ': ...');
+    } else {
+      print( search + ': No Such Animal Found'); 
+    }
+  }
+}
+		</script>
 		<img width="1500" height="935" src="https://image.ibb.co/iK4XVy/The_Great_Barrier_Reef_Food_Web.jpg">
+		<p></p>
 	</body>
 </html>
