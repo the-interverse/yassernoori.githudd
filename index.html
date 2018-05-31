@@ -38,7 +38,7 @@ function print(message) {
   document.write( '<p>' + message + '</p>');
 }
 
-while (true) {
+function detail() {
   search = prompt("Search An Animal For Its Image. \n Type 'LIST' For A List Of Animals \n Type 'QUIT' To Exit");
   search = search.toLowerCase();
   if ( search === 'quit') {
@@ -48,14 +48,16 @@ while (true) {
   } else {
     if ( animals.indexOf( search ) > -1 ) {
       alert( 'Results For ' + search + ': ...');
-      x = document.createElement('div');
-      x.setAttribute("id", search);
     } else {
       print( search + ': No Such Animal Found'); 
     }
   }
 }
 };
+			/*
+			      x = document.createElement('div');
+      x.setAttribute("id", search); */
+			
 		</script>
 		<img width="1500" height="935" src="https://image.ibb.co/iK4XVy/The_Great_Barrier_Reef_Food_Web.jp">
 		<p></p>
