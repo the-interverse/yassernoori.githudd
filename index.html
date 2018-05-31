@@ -24,7 +24,7 @@
 		  margin-left: auto;
 		  margin-right: auto;
 		}
-			#algae{font-size:200px}
+			#algae{background-image:url('https://lg-sonic-lgsound1.netdna-ssl.com/wp-content/uploads/excessive-algae-growth-720x400.jpg');width:50%;height:50%}
 		</style>
 	</head>
 	<body>
@@ -36,7 +36,7 @@ var animals = [ 'tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagl
 var search;
 
 function print(message) {
-  document.write( '<p id=x>' + message + '</p>');
+  document.write( '<p>' + message + '</p>');
 }
 
 while (true) {
@@ -48,8 +48,9 @@ while (true) {
     print( animals.join(', ') ); 
   } else {
     if ( animals.indexOf( search ) > -1 ) {
-      var x = document.createElementById(search);
       print( 'Results For ' + search + ': ...');
+      x = document.createElement('div');
+      x.setAttribute("id", search);
     } else {
       print( search + ': No Such Animal Found'); 
     }
