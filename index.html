@@ -13,10 +13,18 @@
 		});
 		</script>
 		<style>
+		@font-face {
+ 		  font-family: 'Raleway';
+  		  src: url("https://fonts.googleapis.com/css?family=Raleway");
+  		  font-weight: normal;
+ 		  font-style: normal;
+		}
+			
 		body {
+ 		  font-family: 'Raleway';
 		  overflow: hidden;
 		  background: #0e0e0e;
-		  color: white;
+		  color: #333;
 		}
 
 		img {
@@ -24,6 +32,18 @@
 		  margin-left: auto;
 		  margin-right: auto;
 		}
+			
+		.info {
+		  width: 20%;
+		  height: 100%;
+		  background: white;
+	 	  position: absolute;
+		  right: 0;
+		}
+			
+			
+			
+			
 			#algae{background-image:url('https://lg-sonic-lgsound1.netdna-ssl.com/wp-content/uploads/excessive-algae-growth-720x400.jpg');width:100%;height:100%}
 		</style>
 	</head>
@@ -34,7 +54,7 @@ window.focus();
 animals = [ 'tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
 
 function print(message) {
-  document.write( '<p>' + message + '</p>');
+  document.getElementById('txt').innerHTML = message;
 }
 
 function detail(){
@@ -60,6 +80,6 @@ function detail(){
 			
 		</script>
 		<img width="1500" height="935" src="https://image.ibb.co/iK4XVy/The_Great_Barrier_Reef_Food_Web.jpg">
-		<input placeholder="search" id="subject" /><button onclick="detail()">Search</button>
+		<div class="info"><h3>Info Page</h3><p class="txt">No Search Results</p><input placeholder="search" id="subject" /><button onclick="detail()">Search</button></div>
 	</body>
 </html>
