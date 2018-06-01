@@ -54,7 +54,7 @@ window.focus();
 animals = [ 'tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
 
 function print(message) {
-  document.getElementById('txt').innerHTML = message;
+  alert(message);
 }
 
 function detail(){
@@ -67,7 +67,7 @@ function detail(){
     print( animals.join(', ') ); 
   } else {
     if ( animals.indexOf( search ) > -1 ) {
-      print( 'Results For ' + search + ': ...');
+      window.location = "yassernoori.github.io/" + search;
     } else {
       print(': No Such Animal Found'); 
     }
