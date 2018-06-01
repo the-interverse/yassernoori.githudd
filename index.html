@@ -50,29 +50,23 @@
 	<body>
 		<script>
 window.focus();
-	
-animals = [ 'tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
+animals = ['tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
 
 function print(message) {
-  alert(message);
+	alert(message);
 }
 
-function detail(){
- while(true) {
-  search = document.getElementById('subject').value;
-  search = search.toLowerCase();
-  if ( search === 'quit') {
-    break;
-  } else if ( search === 'list' ) {
-    print( animals.join(', ') ); 
-  } else {
-    if ( animals.indexOf( search ) > -1 ) {
-      window.location = "yassernoori.github.io/" + search;
-    } else {
-      print(': No Such Animal Found'); 
-    }
-  }
-}
+function detail() {
+	search = document.getElementById('subject').value;
+	search = search.toLowerCase();
+	
+	else {
+		if (animals.indexOf(search) > -1) {
+			window.location = "yassernoori.github.io/" + search + ".html";
+		} else {
+			print('No Such Animal Found');
+		}
+	}
 }
 			/*
 			      x = document.createElement('div');
