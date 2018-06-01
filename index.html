@@ -52,22 +52,14 @@
 window.focus();
 animals = ['tiger shark', 'sea turtle', 'sea snake', 'manta ray', 'sea eagle', 'whale shark', '11 armed sea star', 'box jellyfish', 'sea urchin', 'abalone', 'clownfish', 'dugong', 'zooplankton', 'phytoplankton', 'sea grass', 'algae'];
 
-function print(message) {
-	alert(message);
-}
 
 function detail() {
-	search = document.getElementById('subject').value;
-	search = search.toLowerCase();
+	search = document.getElementById('search').value;
 	
 	if (animals.indexOf(search) > -1) {
 		window.location = "yassernoori.github.io/" + search + ".html";
 	} 
-}
-			/*
-			      x = document.createElement('div');
-      x.setAttribute("id", search); */
-			
+}		
 		</script>
 		<div id="info"><h3>Info Page</h3><input placeholder="search" id="subject" /><button onclick="detail()">Search</button></div>
 		<img width="1500" height="935" src="https://image.ibb.co/iK4XVy/The_Great_Barrier_Reef_Food_Web.jpg">
